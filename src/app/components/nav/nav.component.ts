@@ -1,15 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatSidenavModule, MatDrawer } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';  // importe o MatListModule
+import { MatIconModule } from '@angular/material/icon'; // ✅ IMPORTAR ISSO
+import {MatButtonModule} from '@angular/material/button';
+
 
 @Component({
   selector: 'app-nav',
-  imports: [],
+  standalone: true,
+  imports: [MatSidenavModule,  MatListModule, MatIconModule, MatButtonModule],
   templateUrl: './nav.component.html',
-  styleUrl: './nav.component.css'
+  styleUrls: ['./nav.component.css']
 })
-export class NavComponent implements OnInit{
+export class NavComponent implements OnInit {
+
+  @ViewChild('drawer') drawer!: MatDrawer;
 
   constructor() { }
-  ngOnInit(): void {
-    
+
+  ngOnInit(): void { }
+
+  toggleDrawer() {
+    this.drawer.toggle();
   }
 }
+

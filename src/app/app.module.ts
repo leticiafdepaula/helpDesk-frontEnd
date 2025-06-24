@@ -49,8 +49,8 @@ imports: [
     MatCardModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
-
+    HttpClientModule,
+       
 ],
 providers: [],
 bootstrap:[AppComponent]

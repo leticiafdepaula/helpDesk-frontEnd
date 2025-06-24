@@ -1,0 +1,23 @@
+.container{
+    height: 100%;
+}
+.sidenav{
+    width: 13rem;
+    color: rgb(247, 241, 242);
+    background: #f2d0e9;
+    background: radial-gradient(circle,rgba(242, 208, 233, 0.9) 42%, rgba(148, 187, 233, 1) 100%);
+}
+
+.sidenav i {
+ margin-right: .6rem;
+}
+
+.sidenav a {
+color: white;
+}
+
+img {
+    width: 100%;
+    height: 7rem;
+    margin: .8rem auto 1rem auto;
+}
